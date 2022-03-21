@@ -5,4 +5,4 @@ const ContactSchema = mongoose.Schema({
     birth: String
 });
 
-module.exports = mongoose.model("Contact", ContactSchema);
+module.exports = mongoose.model("Contacts", ContactSchema);

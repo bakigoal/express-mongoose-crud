@@ -1,9 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const env = require('./config')
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://root:example@localhost:27017",
+mongoose.connect(env.mongo.url,
     {
       useNewUrlParser: true,
     }
